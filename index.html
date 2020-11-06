@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trello Quiz</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <h1>Global Solution SAS</h1>
+
+    <div id="task">
+        <input id="description" placeholder="Descripcion de la tarea">
+     
+        <button id="registerBtn">Nueva Tarea</button>
+
+   </div>
+
+   <h3>To do</h3>
+   <div id="todo">
+
+   </div>
+
+   <h3>Doing</h3>
+   <div>
+
+   </div>
+
+   <h3>Done </h3>
+   <div>
+
+   </div>
+
+
+
+</body>
+</html>
+
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyA4sWFzaHBcJbpgBGXLavtfK8Y4vi2Bpa8",
+    authDomain: "ecosistemas-81e39.firebaseapp.com",
+    databaseURL: "https://ecosistemas-81e39.firebaseio.com",
+    projectId: "ecosistemas-81e39",
+    storageBucket: "ecosistemas-81e39.appspot.com",
+    messagingSenderId: "363349207942",
+    appId: "1:363349207942:web:6755d5038030a2d28c9a07",
+    measurementId: "G-5PF8EH2ELX"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+</script>
+
+<script src="components/ToDo.js"></script>
+<script src="js/index.js"></script>
